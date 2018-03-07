@@ -1,0 +1,2757 @@
+AutoGen Definitions dummy;
+struct = {
+  cp-id     = 'struct_edge';
+  cp-name   = 'Edge';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'struct_edge_1a6ecaa9781a9e8f94990ed0f2c65e1d62';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'length';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '43';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Euclidian length of the edge.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'main_8cpp_1a05dfe2dfbde813ad234b514f30e662f1';
+        sec-mem-ref-line = '20';
+        sec-mem-ref-name = 'Point::x';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'main_8cpp_1a6101960c8d2d4e8ea1d32c9234bbeb8d';
+        sec-mem-ref-line = '22';
+        sec-mem-ref-name = 'Point::y';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'main_8cpp_1a9a666531e0e99adff132be93d2407d0c';
+        sec-mem-ref-line = '24';
+        sec-mem-ref-name = 'Point::z';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'struct_edge_1a9cb958550d6ca42fd7122235d64898c9';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Point
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'p1';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '35';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+End point.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'struct_edge_1a0867d7b428491ef61eb90b540a73db1d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Point
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'p2';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '37';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+End point.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'struct_edge_1a7a85f26cb118376c19d65468caaa60a0';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'hidden';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= false
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '40';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Whether edge is hidden.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Relevant only for orthogonal projections. true if edge is to be depicted by a dashed line. false otherwise. 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+  cp-fileline  = '31';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Wrapper around the representation of an edge.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'Edge';
+        node-link = {
+          node-link-id = 'struct_edge';
+        };
+        node-child = {
+          child-id = '2';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+p1
+p2
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'Point';
+        node-link = {
+          node-link-id = 'struct_point';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+class = {
+  cp-id     = 'class_model2_d';
+  cp-name   = 'Model2D';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_model2_d_1a7d34bac5dba9aa5a036657c86b7dc540';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'complete_edges';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '84';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Completes the Edgeset of the graph.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Creates all possible edges between nodes of the graph that would not disturb the rendered edges ie edges that might have been lost in the 3D to 2D conversion process. 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_model2_d_1a34de05e0d636d749c12ac65dc68fa014';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'display_2D';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '89';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Display the view on the screen.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_model2_d_1a2e59f3e098d545db66b3e64abd2cb47e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'add_edge';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Point
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'p1';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Point
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'p2';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '94';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Add new edge between pre-existing nodes p1 and p2.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_model2_d_1a741adfe9d23778a274c4b65abe656213';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'add_node';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Point
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'p1';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '98';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Add new node to the graph.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_model2_d_1a5422162759cafed4942a5980c9ec38b5';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'is_valid';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '104';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Check if the model is a valid 2D projection.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Runs basic sanity checks like no hanging edges, three faces at each vertex etc. May produce false positives. 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_model2_d_1a0f0885750616c56b5e886ce438fed9e8';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+list< Point >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Nodes';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '75';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Nodes of the graph. Each node identifies a labelled vertex. Z coordinate must be 0.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_model2_d_1a1041faaf6236907f3b255c06f3b8b2b0';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+list< Edge >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Edges';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '76';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Edges of the graph.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_model2_d_1acc4c1f430709577948ea5ecc89bf8595';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Edges_complete';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '80';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Whether the edgeset is complete.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+When converting from 3D to 2D, multiple edges may overlap or become degenerate. This value should be set to false if any of these edges have been removed. If this value is set to true, complete_edges is not called by convert_to_3D 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+  cp-fileline  = '71';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+2D Model Class
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+Common internal representation for all types of drawings. Represented as a Euclidian graph on xy plane 
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_model3_d';
+  cp-name   = 'Model3D';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_model3_d_1a5bfdb262b10091a6418641d7c5258c06';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'rotate';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'theta';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'alpha';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'beta';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '131';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Rotate the object.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Allows rotation of the object in 3D space about a homogeneous axis. Note that this does not affect the reference points, ie the orthogonal projections remain unchanged 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_model3_d_1a1ea2161786933e2a9d896b20ab9f8439';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'translate';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'x';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'y';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'z';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '137';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Translate the object.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Moves the object so that the given coordinates form the new origin. This may be used in conjection with rotate in order to rotate about a non homogeneous axis. Note that this does not affect the reference points, ie the orthogonal projections remain unchanged 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_model3_d_1af3b01c67924a39847a2ded7df3f68424';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'scale';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'factor';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '141';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Scales the object by the given factor.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_model3_d_1a182a7f4de35aa7d5e16e387206167e4e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Ortho
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'project';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '146';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Get the orthographic Projection of the Object.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Uses reduce function to extract the top, front and side views of the object with the help of the reference points. Restores the object to its original configuration before returning. Side view containing lesser hidden lines is chosen. 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_model3_d_1a6b2cb314d04799406a99119e8b51893f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Extract';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Ortho
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ortho';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '152';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Construct Model3D from Orthogonal Projection.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Master method for 2D to 3D conversion. Converges for labelled nodes over 3 views. May or may not converge if some information is missing. Relies on the convert_to_3D function of the Ortho class 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_model3_d_1ae4de816d662bb5e3523307619efd266f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'display_3D';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'show_planes';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '156';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Display object on screen.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_model3_d_1a66b4b97040a4e15493b54fdafd71ea62';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Model2D
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getIso';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '161';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Get the Isometric Projection of the Object.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Uses reduce function to extract an isometric view of the object with the help of the reference points. Hidden lines are removed. Restores the object to its original configuration before returning. Side view containing more detain is chosen. 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_model3_d_1a9da197859f23037c5832ca23d5390d06';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Model2D
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getPerspective';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '166';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Obtain Pespective projection in current orientation.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Gives the 1-point perspective projection with eye at origin and screen at z=1. Pushes back object should any part of it lie in front of the screen. Restores the object to its original configuration before returning. 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_model3_d_1ae2ffd9178bbee05001346f5f3053085c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+list< Point >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Nodes';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '115';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Nodes of the graph. Each node identifies a labelled vertex.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_model3_d_1af6a6f89382552bd1ffea1cc3b1232bbc';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+list< Edge >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Edges';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '116';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Edges of the graph. Together with the nodes, defines the wireframe of the model.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_model3_d_1a123312087c9a69c4d99a02421383db25';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+list< Plane >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Planes';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '117';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Planes differentiate the faces of the graph which are actually present from the ones that are not.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_model3_d_1a868899b0989138f4a3fd738b59578566';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Point
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'ref_Origin';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '121';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Reference origin for the graph.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+The reference origin, reference x and reference y are points used for identifying the viewing angle for the object. While the exact values of ref_x & ref_y doesn't matter, it is advisable to keep them at unit distance from the origin. Further, they must form a right angle at ref_origin. ref_z is infered by assuming right handed coordinate system. 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_model3_d_1afa21019a111cf636ed790ecca4fbbd5c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Point
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'ref_x';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '124';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Reference x axis point for the graph.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+The reference origin, reference x and reference y are points used for identifying the viewing angle for the object. While the exact values of ref_x & ref_y doesn't matter, it is advisable to keep them at unit distance from the origin. Further, they must form a right angle at ref_origin. ref_z is infered by assuming right handed coordinate system. 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_model3_d_1a9b5ef19ecffe70a933d150b937604605';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Point
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'ref_y';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '127';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Reference y axis point for the graph.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+The reference origin, reference x and reference y are points used for identifying the viewing angle for the object. While the exact values of ref_x & ref_y doesn't matter, it is advisable to keep them at unit distance from the origin. Further, they must form a right angle at ref_origin. ref_z is infered by assuming right handed coordinate system. 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_model3_d_1a9e9d831a786d5bd3c8e7153805857e96';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Model2D
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'reduce';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '172';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Get the front view in the current orientation. Called by all other functions that output Model2D.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+  cp-fileline  = '112';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+3D Model Class
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+Holds the internal representation of the 3D object being worked on in terms of an Euclidean graph. 
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 7;
+        node-label = 'Point';
+        node-link = {
+          node-link-id = 'struct_point';
+        };
+      }; /* node */
+      node = {
+        node-id    = 6;
+        node-label = 'Model3D';
+        node-link = {
+          node-link-id = 'class_model3_d';
+        };
+        node-child = {
+          child-id = '7';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+ref_x
+ref_y
+ref_Origin
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_ortho';
+  cp-name   = 'Ortho';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_ortho_1aea4c5ec72c28e1cdaeafe58332961b7f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'export_ortho';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '192';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Save projection as image file.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_ortho_1ab28d72ced7a76f171ea2529841f32e5f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'display_ortho';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '197';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Display all the views on the screen.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_ortho_1ab7cd528c68f0e81a247a4a35c510587f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Model3D
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'convert_to_3D';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '203';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+3D Conversion algorithm.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Master method for 2D to 3D conversion. Converges for labelled nodes over 3 views. May or may not converge if some information is missing. Model3D.Extract relies on this  
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_ortho_1ac962c14a7e5aa92ffa825ab45fdf7019';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Model2D
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Top';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '182';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Top view.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_ortho_1ad4c4d5345c80e0b320109379f8337f3d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Model2D
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Front';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '183';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Front view.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_ortho_1a8e54270a4ca79456cd1bbcd450327ebf';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Model2D
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Side';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '184';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Side view. Can be left or right side, depending on Side_Is_Left.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_ortho_1a1bcf0ff839ed8b1a55946203841d61df';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Side_Is_Left';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '185';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_ortho_1a4405a9e5f8b3494b576ab83112cbc4fe';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Nodes_complete';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '189';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Whether all nodes are labelled.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+While labelling is a must for geometric objects, it is often ommited for machine parts. The 3D conversion may fail if this is false. 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_ortho_1ad490197bc139576b137842e2e31cf036';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Model2D
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'generate_probable_wireframe';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '208';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_ortho_1a36b6a7d4367edbb3ac9d17b505fc2da5';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Model3D
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'generate_probable_faces';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Model2D
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'input';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '212';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_ortho_1a826726e655a3db302697bbf1ebad15dd';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Model3D
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'eliminate_ghosts';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Model3D
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'input';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '216';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+  cp-fileline  = '179';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Orthographic Projection class.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+Wrapper around orthographic projection of an object. Also provides functions to convert from 2D to 3D 
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 9;
+        node-label = 'Ortho';
+        node-link = {
+          node-link-id = 'class_ortho';
+        };
+        node-child = {
+          child-id = '10';
+          relation = usage;
+          edgelabel = <<_EnD_oF_dEf_TeXt_
+Top
+Front
+Side
+_EnD_oF_dEf_TeXt_;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 10;
+        node-label = 'Model2D';
+        node-link = {
+          node-link-id = 'class_model2_d';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_plane';
+  cp-name   = 'Plane';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_plane_1acc33337ccd8853d305691bde8920ab65';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_cosine';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'direction';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '59';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Get the directional cosine of the normal to the surface.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Obtains normal by taking cros product of two binding edges and returns the directional cosine 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_plane_1aed3279bebac60ad4f5fb428343f31da4';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'contains';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Point
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'p';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '64';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Check if lies on the Plane.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_plane_1adf32f2fa71cc3d5d0e1fb2865aba4269';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+list< Edge >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Bounds';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '55';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Edges binding the plane.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+All these edges must be coplanar and must have a complete cyclic decomposition. Further, the largest cycle(in terms of length) must contain all other cycles. These smaller cycles are modelled as holes on the surface  
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+  cp-fileline  = '50';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Wrapper around the representation of a plane.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+struct = {
+  cp-id     = 'struct_point';
+  cp-name   = 'Point';
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'struct_point_1a05dfe2dfbde813ad234b514f30e662f1';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'x';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '20';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+x coordinate
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'main_8cpp_1a6ecaa9781a9e8f94990ed0f2c65e1d62';
+        sec-mem-ref-line = '43';
+        sec-mem-ref-name = 'Edge::length';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'struct_point_1a6101960c8d2d4e8ea1d32c9234bbeb8d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'y';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '22';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+y coordinate
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'main_8cpp_1a6ecaa9781a9e8f94990ed0f2c65e1d62';
+        sec-mem-ref-line = '43';
+        sec-mem-ref-name = 'Edge::length';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'struct_point_1a9a666531e0e99adff132be93d2407d0c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'z';
+      sec-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      sec-mem-desc-line = '24';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+z coordinate
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'main_8cpp_1a6ecaa9781a9e8f94990ed0f2c65e1d62';
+        sec-mem-ref-line = '43';
+        sec-mem-ref-name = 'Edge::length';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+  cp-fileline  = '16';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+Wrapper around the representation of a point.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* struct */
+file = {
+  file-id   = 'file__interface_8cpp';
+  file-name = 'file_interface.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'file__interface_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'main';
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/file_interface.cpp';
+      func-mem-desc-line = '6';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'file__interface_8cpp_1ad21359e901e63be814e22cdbb318f1e9';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+Ortho
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'fileToOrtho';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'filename';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/file_interface.cpp';
+      func-mem-desc-line = '10';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Read orthographic projection from file.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'file__interface_8cpp_1a6fc813d4efb67a4867473cbcc9c3d425';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+Model3D
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'fileTo3D';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'filename';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/file_interface.cpp';
+      func-mem-desc-line = '19';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Read 3D model from file.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'file__interface_8cpp_1a7b374e7bd169795d3407acf4ceb9f043';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'OrthoToFile';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'filename';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Ortho
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'input';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/file_interface.cpp';
+      func-mem-desc-line = '28';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Save Orthographic projection.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'file__interface_8cpp_1a9a0af55f5c140abca29db9ea03cf42f4';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'Model3DToFile';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'filename';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Model3D
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'input';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/file_interface.cpp';
+      func-mem-desc-line = '33';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Save 3D Model.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/file_interface.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'gui_8cpp';
+  file-name = 'gui.cpp';
+    define = {
+    define-member = {
+      define-mem-kind = 'define';
+      define-mem-id   = 'gui_8cpp_1af5b5ae99559e43088802e70077183feb';
+      define-mem-virt = normal;
+      define-mem-prot = public;
+      define-mem-name = 'PATH_TO_TEAPOT_OBJ_FILE';
+      define-mem-initializer = <<_EnD_oF_dEf_TeXt_
+"teapot.obj"
+_EnD_oF_dEf_TeXt_;
+      define-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      define-mem-desc-line = '4';
+      define-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      define-mem-documentation = <<_EnD_oF_dEf_TeXt_
+File for GUI interfacing between the user and main.cpp
+Based on OpenGL framework  
+_EnD_oF_dEf_TeXt_;
+    }; /* define-member */
+    };
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'gui_8cpp_1a7638174246a8e96f9ab5b871377185a8';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+const vec3
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'eyeinit';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+0.
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = '0';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+0.
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = '0';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+7.
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = '0';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      func-mem-desc-line = '18';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'gui_8cpp_1ad32bf0e0885d18a6c1c9f500a7b0533f';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+const vec3
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'upinit';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+0.
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = '0';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+1.
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = '0';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+0.
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = '0';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      func-mem-desc-line = '19';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'gui_8cpp_1acc016cf2114ea8adaa1a45279fc0d1b9';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+const vec4
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'light_position';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+0
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+5
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+10
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+1
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      func-mem-desc-line = '25';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceby = {
+        func-mem-ref-id = 'gui_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+        func-mem-ref-line = '99';
+        func-mem-ref-name = 'display';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'gui_8cpp_1a33eab79c090704dacedaf9f9130f48e2';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+const vec4
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'light_position1';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+0
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+5
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+-
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = '10';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+1
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      func-mem-desc-line = '26';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceby = {
+        func-mem-ref-id = 'gui_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+        func-mem-ref-line = '99';
+        func-mem-ref-name = 'display';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'gui_8cpp_1a8a50b0c98b5ab4b52bdb9c457d980487';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+const vec4
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'light_specular';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+0.
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = '6';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+0.
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = '3';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+0
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+1
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      func-mem-desc-line = '27';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceby = {
+        func-mem-ref-id = 'gui_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+        func-mem-ref-line = '99';
+        func-mem-ref-name = 'display';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'gui_8cpp_1ad66785e7e75a2971db2e1f401306dbe8';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+const vec4
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'light_specular1';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+0
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+0.
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = '3';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+0.
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = '6';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+1
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      func-mem-desc-line = '28';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceby = {
+        func-mem-ref-id = 'gui_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+        func-mem-ref-line = '99';
+        func-mem-ref-name = 'display';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'gui_8cpp_1a416708f26d11bac5934b8735d413388c';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+const vec4
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'one';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+1
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+1
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+1
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+1
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      func-mem-desc-line = '29';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceby = {
+        func-mem-ref-id = 'gui_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+        func-mem-ref-line = '99';
+        func-mem-ref-name = 'display';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'gui_8cpp_1ae9cea8d9a2717afde16b3bb10397f384';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+const vec4
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'medium';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+0.
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = '5';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+0.
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = '5';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+0.
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = '5';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+1
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      func-mem-desc-line = '30';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'gui_8cpp_1a0a19e47b983ba0b89448d60d363e0a2d';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+const vec4
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'small';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+0.
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = '2';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+0.
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = '2';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+0.
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = '2';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+1
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      func-mem-desc-line = '31';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceby = {
+        func-mem-ref-id = 'gui_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+        func-mem-ref-line = '99';
+        func-mem-ref-name = 'display';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'gui_8cpp_1a3da357c84de8cd03ad254783af0dba0e';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'transformvec';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const vec4
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'input';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+vec4 &
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'output';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      func-mem-desc-line = '52';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+New helper transformation function to transform vector by the view matrix.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1a59b3ea36e27c909644e68fe5a17764d3';
+        func-mem-ref-line = '49';
+        func-mem-ref-name = 'view';
+    };
+      func-mem-referenceby = {
+        func-mem-ref-id = 'gui_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+        func-mem-ref-line = '99';
+        func-mem-ref-name = 'display';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'gui_8cpp_1a4b66d5e31b5dc18b314c8a68163263bd';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'cleanup';
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      func-mem-desc-line = '58';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Deallocate any dynamically allocated memory here - shader pipelines.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceby = {
+        func-mem-ref-id = 'gui_8cpp_1a0ddf1224851353fc92bfbff6f499fa97';
+        func-mem-ref-line = '120';
+        func-mem-ref-name = 'main';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'gui_8cpp_1a7aa487b9af987dc9f51db302727afd93';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+std::string
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'imgNumber';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'num';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      func-mem-desc-line = '63';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'gui_8cpp_1a0d20b69b0ad703df78459e1033d5c1d4';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'printHelp';
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      func-mem-desc-line = '68';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceby = {
+        func-mem-ref-id = 'gui_8cpp_1a0ddf1224851353fc92bfbff6f499fa97';
+        func-mem-ref-line = '120';
+        func-mem-ref-name = 'main';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'gui_8cpp_1aef7ba2f69afb2d954545f64c7fe24b14';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'keyboard';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+unsigned char
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'key';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'x';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'y';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      func-mem-desc-line = '73';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceby = {
+        func-mem-ref-id = 'gui_8cpp_1a0ddf1224851353fc92bfbff6f499fa97';
+        func-mem-ref-line = '120';
+        func-mem-ref-name = 'main';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'gui_8cpp_1a98ec2c327bb359692043e43a6805f486';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'specialKey';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'key';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'x';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'y';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      func-mem-desc-line = '79';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceby = {
+        func-mem-ref-id = 'gui_8cpp_1a0ddf1224851353fc92bfbff6f499fa97';
+        func-mem-ref-line = '120';
+        func-mem-ref-name = 'main';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'gui_8cpp_1a6819355374dd277347abd7c4235f0cd7';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'reshape';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'width';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'height';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      func-mem-desc-line = '85';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceby = {
+        func-mem-ref-id = 'gui_8cpp_1a0ddf1224851353fc92bfbff6f499fa97';
+        func-mem-ref-line = '120';
+        func-mem-ref-name = 'main';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'gui_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'init';
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      func-mem-desc-line = '92';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceby = {
+        func-mem-ref-id = 'gui_8cpp_1a0ddf1224851353fc92bfbff6f499fa97';
+        func-mem-ref-line = '120';
+        func-mem-ref-name = 'main';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'gui_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'display';
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      func-mem-desc-line = '99';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1a3da357c84de8cd03ad254783af0dba0e';
+        func-mem-ref-line = '52';
+        func-mem-ref-name = 'transformvec';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1a3421bfaee33cd573328fb93baea49b26';
+        func-mem-ref-line = '33';
+        func-mem-ref-name = 'light0';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1a37f7463737283efadc92c8ee99e4b475';
+        func-mem-ref-line = '33';
+        func-mem-ref-name = 'light1';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1a2d8d7964cf4cba5ba4378af7ec6d876e';
+        func-mem-ref-line = '37';
+        func-mem-ref-name = 'light0posn';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1a19baafd5723bcd019c219f60a0f942fe';
+        func-mem-ref-line = '38';
+        func-mem-ref-name = 'light0color';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1a6ee409599e8349e29d396bfef302e2e6';
+        func-mem-ref-line = '39';
+        func-mem-ref-name = 'light1posn';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1a35f4594c233a6df52c915fe71ab19a0b';
+        func-mem-ref-line = '40';
+        func-mem-ref-name = 'light1color';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1adb4feae4b2541667617033116f8873d5';
+        func-mem-ref-line = '41';
+        func-mem-ref-name = 'ambient';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1aa57aec5303ee2b065be4a38424d382e9';
+        func-mem-ref-line = '42';
+        func-mem-ref-name = 'diffuse';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1a0bf3746e9778336009631b0619ce9609';
+        func-mem-ref-line = '43';
+        func-mem-ref-name = 'specular';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1a9c46153a78d1d4bf865575a051c4e927';
+        func-mem-ref-line = '44';
+        func-mem-ref-name = 'shininess';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1af30b1451540054d911b266bc15409294';
+        func-mem-ref-line = '32';
+        func-mem-ref-name = 'high';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1a2dd69b92edb4963b532ac479913676e2';
+        func-mem-ref-line = '36';
+        func-mem-ref-name = 'islight';
+    };
+      func-mem-referenceby = {
+        func-mem-ref-id = 'gui_8cpp_1a0ddf1224851353fc92bfbff6f499fa97';
+        func-mem-ref-line = '120';
+        func-mem-ref-name = 'main';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'gui_8cpp_1a0ddf1224851353fc92bfbff6f499fa97';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'main';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'argc';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'argv';
+        func-mem-param-array = '[]';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      func-mem-desc-line = '120';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Main function including the functions defined for object trandformations with proper shaders.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1a02fd73d861ef2e4aabb38c0c9ff82947';
+        func-mem-ref-line = '92';
+        func-mem-ref-name = 'init';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+        func-mem-ref-line = '99';
+        func-mem-ref-name = 'display';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1a98ec2c327bb359692043e43a6805f486';
+        func-mem-ref-line = '79';
+        func-mem-ref-name = 'specialKey';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1aef7ba2f69afb2d954545f64c7fe24b14';
+        func-mem-ref-line = '73';
+        func-mem-ref-name = 'keyboard';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1a6819355374dd277347abd7c4235f0cd7';
+        func-mem-ref-line = '85';
+        func-mem-ref-name = 'reshape';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1aac374e320caaadeca4874add33b62af2';
+        func-mem-ref-line = '22';
+        func-mem-ref-name = 'w';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1a16611451551e3d15916bae723c3f59f7';
+        func-mem-ref-line = '22';
+        func-mem-ref-name = 'h';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1a0d20b69b0ad703df78459e1033d5c1d4';
+        func-mem-ref-line = '68';
+        func-mem-ref-name = 'printHelp';
+    };
+      func-mem-referenceto = {
+        func-mem-ref-id = 'gui_8cpp_1a4b66d5e31b5dc18b314c8a68163263bd';
+        func-mem-ref-line = '58';
+        func-mem-ref-name = 'cleanup';
+    };
+    }; /* func-member */
+    };
+    var = {
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'gui_8cpp_1a14236de313193a14b4dbdf442bcf2bb9';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'amount';
+      var-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      var-mem-desc-line = '14';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'gui_8cpp_1a59c7cca5ec718e42f0b3d58b033932c1';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+vec3
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'eye';
+      var-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      var-mem-desc-line = '16';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'gui_8cpp_1af25e132b20481c5c82d8394e0beeea4a';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+vec3
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'up';
+      var-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      var-mem-desc-line = '17';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'gui_8cpp_1a4d432e04fb203c843e0227155df3f11e';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'amountinit';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 5
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      var-mem-desc-line = '20';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'gui_8cpp_1aac374e320caaadeca4874add33b62af2';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'w';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 500
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      var-mem-desc-line = '22';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-referenceby = {
+        var-mem-ref-id = 'gui_8cpp_1a0ddf1224851353fc92bfbff6f499fa97';
+        var-mem-ref-line = '120';
+        var-mem-ref-name = 'main';
+    };
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'gui_8cpp_1a16611451551e3d15916bae723c3f59f7';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'h';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 500
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      var-mem-desc-line = '22';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-referenceby = {
+        var-mem-ref-id = 'gui_8cpp_1a0ddf1224851353fc92bfbff6f499fa97';
+        var-mem-ref-line = '120';
+        var-mem-ref-name = 'main';
+    };
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'gui_8cpp_1af30b1451540054d911b266bc15409294';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+const GLfloat
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'high';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 100
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      var-mem-desc-line = '32';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-referenceby = {
+        var-mem-ref-id = 'gui_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+        var-mem-ref-line = '99';
+        var-mem-ref-name = 'display';
+    };
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'gui_8cpp_1a3421bfaee33cd573328fb93baea49b26';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+vec4
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'light0';
+      var-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      var-mem-desc-line = '33';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-referenceby = {
+        var-mem-ref-id = 'gui_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+        var-mem-ref-line = '99';
+        var-mem-ref-name = 'display';
+    };
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'gui_8cpp_1a37f7463737283efadc92c8ee99e4b475';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+vec4
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'light1';
+      var-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      var-mem-desc-line = '33';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-referenceby = {
+        var-mem-ref-id = 'gui_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+        var-mem-ref-line = '99';
+        var-mem-ref-name = 'display';
+    };
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'gui_8cpp_1a2dd69b92edb4963b532ac479913676e2';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+GLuint
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'islight';
+      var-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      var-mem-desc-line = '36';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Variables to set uniform params for lighting fragment shader.
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-referenceby = {
+        var-mem-ref-id = 'gui_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+        var-mem-ref-line = '99';
+        var-mem-ref-name = 'display';
+    };
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'gui_8cpp_1a2d8d7964cf4cba5ba4378af7ec6d876e';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+GLuint
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'light0posn';
+      var-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      var-mem-desc-line = '37';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-referenceby = {
+        var-mem-ref-id = 'gui_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+        var-mem-ref-line = '99';
+        var-mem-ref-name = 'display';
+    };
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'gui_8cpp_1a19baafd5723bcd019c219f60a0f942fe';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+GLuint
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'light0color';
+      var-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      var-mem-desc-line = '38';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-referenceby = {
+        var-mem-ref-id = 'gui_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+        var-mem-ref-line = '99';
+        var-mem-ref-name = 'display';
+    };
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'gui_8cpp_1a6ee409599e8349e29d396bfef302e2e6';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+GLuint
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'light1posn';
+      var-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      var-mem-desc-line = '39';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-referenceby = {
+        var-mem-ref-id = 'gui_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+        var-mem-ref-line = '99';
+        var-mem-ref-name = 'display';
+    };
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'gui_8cpp_1a35f4594c233a6df52c915fe71ab19a0b';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+GLuint
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'light1color';
+      var-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      var-mem-desc-line = '40';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-referenceby = {
+        var-mem-ref-id = 'gui_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+        var-mem-ref-line = '99';
+        var-mem-ref-name = 'display';
+    };
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'gui_8cpp_1adb4feae4b2541667617033116f8873d5';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+GLuint
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'ambient';
+      var-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      var-mem-desc-line = '41';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-referenceby = {
+        var-mem-ref-id = 'gui_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+        var-mem-ref-line = '99';
+        var-mem-ref-name = 'display';
+    };
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'gui_8cpp_1aa57aec5303ee2b065be4a38424d382e9';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+GLuint
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'diffuse';
+      var-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      var-mem-desc-line = '42';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-referenceby = {
+        var-mem-ref-id = 'gui_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+        var-mem-ref-line = '99';
+        var-mem-ref-name = 'display';
+    };
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'gui_8cpp_1a0bf3746e9778336009631b0619ce9609';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+GLuint
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'specular';
+      var-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      var-mem-desc-line = '43';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-referenceby = {
+        var-mem-ref-id = 'gui_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+        var-mem-ref-line = '99';
+        var-mem-ref-name = 'display';
+    };
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'gui_8cpp_1a9c46153a78d1d4bf865575a051c4e927';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+GLuint
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'shininess';
+      var-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      var-mem-desc-line = '44';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-referenceby = {
+        var-mem-ref-id = 'gui_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+        var-mem-ref-line = '99';
+        var-mem-ref-name = 'display';
+    };
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'gui_8cpp_1a6d572d653bb9805417195280642d1fce';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+GLuint
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'color';
+      var-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      var-mem-desc-line = '45';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'gui_8cpp_1a0d2daae53beef2a19fac6cde68baf80a';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+GLuint
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'projectionPosition';
+      var-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      var-mem-desc-line = '48';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Uniform variables used for the transformation matrices.
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'gui_8cpp_1a59b3ea36e27c909644e68fe5a17764d3';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+mat4
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'view';
+      var-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      var-mem-desc-line = '49';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-referenceby = {
+        var-mem-ref-id = 'gui_8cpp_1a3da357c84de8cd03ad254783af0dba0e';
+        var-mem-ref-line = '52';
+        var-mem-ref-name = 'transformvec';
+    };
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'gui_8cpp_1a1bde7aef5aea199c7c14ac7cc6f71a23';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+mat4
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'projection';
+      var-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+      var-mem-desc-line = '49';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    };
+  file-full-name  = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/gui.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'main_8cpp';
+  file-name = 'main.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'main_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'display';
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      func-mem-desc-line = '225';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceby = {
+        func-mem-ref-id = 'main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627';
+        func-mem-ref-line = '243';
+        func-mem-ref-name = 'main';
+    };
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'main';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'argc';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+char **
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'argv';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+      func-mem-desc-line = '243';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-referenceto = {
+        func-mem-ref-id = 'main_8cpp_1a1e5b20fed15743656bb6d2e6a6ea6269';
+        func-mem-ref-line = '225';
+        func-mem-ref-name = 'display';
+    };
+    }; /* func-member */
+    };
+  file-full-name  = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/main.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'shaders_8cpp';
+  file-name = 'shaders.cpp';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'shaders_8cpp_1a35009c8cbcad5a85e281ddc3037016bc';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'programerrors';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const GLint
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'program';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/shaders.cpp';
+      func-mem-desc-line = '11';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+Program Error raising function.
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'shaders_8cpp_1aedc5b423d6f6d64b2617819d95a9b23e';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'shadererrors';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const GLint
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'shader';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/shaders.cpp';
+      func-mem-desc-line = '17';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'shaders_8cpp_1a9fc90dee052484acb68b16eceae61613';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+GLuint
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'initshaders';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+GLenum
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'type';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const char *
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'filename';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/shaders.cpp';
+      func-mem-desc-line = '23';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'shaders_8cpp_1ae67bba97174268e2489f16d2ffedcc94';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+GLuint
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'initprogram';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+GLuint
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'vertexshader';
+      }; /*        func-mem-param--param */
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+GLuint
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'fragmentshader';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/shaders.cpp';
+      func-mem-desc-line = '29';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = 'C:/Users/Shreshth Tuli/Google Drive/Second Year/Second Semester/COP290/ED Project/3. Class description - Doxygen/ED-project-src/shaders.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
