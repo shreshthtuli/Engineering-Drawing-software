@@ -1,0 +1,2 @@
+3D Objects are stored as .obj files
+2D Objects are stored as OpenGL diagrams
