@@ -37,15 +37,21 @@ private slots:
 
     void on_action3D_Model_2_triggered();
 
+    void on_ScaleVal_valueChanged(double arg1);
+
+    void on_actionOrthographic_projection_triggered();
+
 private:
-    QString filename;
     QSlider *createSlider();
+    float scalefactor = 1.00;
+    QString filename;
     QSlider *xSlider;
     QSlider *ySlider;
     QSlider *zSlider;
     Ui::MainWindow *ui;
     MyGLWidget *glWidget;
     Model3D MyModel;
+    Model3D Mod;
 };
 
 #endif // MAINWINDOW_H

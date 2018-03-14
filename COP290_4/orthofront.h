@@ -4,12 +4,14 @@
 #define ORTHOFRONT_H
 
 #include <QGLWidget>
+#include <funcs.h>
 
 class OrthoFront : public QGLWidget
 {
     Q_OBJECT
 public:
     explicit OrthoFront(QWidget *parent = 0);
+    Model3D myModel;
     ~OrthoFront();
 signals:
 

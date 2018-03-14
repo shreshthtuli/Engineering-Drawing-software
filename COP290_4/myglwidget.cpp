@@ -77,12 +77,14 @@ void MyGLWidget::initializeGL()
     qglClearColor(Qt::black);
 
     glEnable(GL_DEPTH_TEST);
-    glEnable(GL_CULL_FACE);
+    //glEnable(GL_CULL_FACE);
     glShadeModel(GL_SMOOTH);
     glEnable(GL_LIGHTING);
     glEnable(GL_LIGHT0);
     glColorMaterial ( GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE );
     glEnable ( GL_COLOR_MATERIAL );
+    glPolygonMode(GL_FRONT, GL_FILL);
+    glPolygonMode(GL_BACK, GL_FILL);
 
     static GLfloat lightPosition[4] = { 0, 0, 10, 1.0 };
     glLightfv(GL_LIGHT0, GL_POSITION, lightPosition);

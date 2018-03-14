@@ -4,12 +4,13 @@
 #define ORTHOTOP_H
 
 #include <QGLWidget>
-
+#include <funcs.h>
 class OrthoTop : public QGLWidget
 {
     Q_OBJECT
 public:
     explicit OrthoTop(QWidget *parent = 0);
+    Model3D myModel;
     ~OrthoTop();
 signals:
 

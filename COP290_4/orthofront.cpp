@@ -69,7 +69,7 @@ void OrthoFront::resizeGL(int width, int height)
 void OrthoFront::draw()
 {
     //Axes
-    glLineWidth(4);
+    glLineWidth(2);
 
     glBegin(GL_LINES);
         glColor3f( 1.0f, 0.0f, 0.0f );
@@ -83,38 +83,17 @@ void OrthoFront::draw()
         glVertex3f(0.0, 4.0, 0.0);
     glEnd();
 
-    glBegin(GL_LINES);
-        glColor3f( 0.0f, 0.0f, 1.0f );
-        glVertex3f(0.0, 0.0, 0.0);
-        glVertex3f(0.0, 0.0, 4.0);
-    glEnd();
+    glLineWidth(4);
 
     //Pojection
-    glLineWidth(2);
-    glColor3f( 1.0f, 1.0f, 1.0f );
-    glBegin(GL_LINES);
-        glVertex2f(1.00, 1.00);
-        glVertex2f(1.00, -1.00);
-    glEnd();
-    glBegin(GL_LINES);
-        glVertex2f(1.00, 1.00);
-        glVertex2f(-1.00, 1.00);
-    glEnd();
-    glBegin(GL_LINES);
-        glVertex2f(-1.00, -1.00);
-        glVertex2f(1.00, -1.00);
-    glEnd();
-    glBegin(GL_LINES);
-        glVertex2f(-1.00, -1.00);
-        glVertex2f(-1.00, 1.00);
-    glEnd();
-    glBegin(GL_LINES);
-        glVertex2f(1.00, 1.00);
-        glVertex2f(-1.00, -1.00);
-    glEnd();
-    glBegin(GL_LINES);
-        glVertex2f(-1.00, 1.00);
-        glVertex2f(1.00, -1.00);
-    glEnd();
+    int i=0;
+    while(i<myModel.Edges.size()){
+        glBegin(GL_LINES);
+        glColor3f( 1.0f, 1.0f, 1.0f );
+        glVertex3f(myModel.Edges[i].p1->x,myModel.Edges[i].p1->y,myModel.Edges[i].p1->z);
+        glVertex3f(myModel.Edges[i].p2->x,myModel.Edges[i].p2->y,myModel.Edges[i].p2->z);
+        i++;
+        glEnd();
+    }
 
 }

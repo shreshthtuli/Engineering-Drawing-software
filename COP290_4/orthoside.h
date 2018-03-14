@@ -4,12 +4,13 @@
 #define ORTHOSIDE_H
 
 #include <QGLWidget>
-
+#include<funcs.h>
 class OrthoSide : public QGLWidget
 {
     Q_OBJECT
 public:
     explicit OrthoSide(QWidget *parent = 0);
+    Model3D myModel;
     ~OrthoSide();
 signals:
 

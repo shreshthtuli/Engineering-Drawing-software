@@ -69,7 +69,7 @@ void OrthoTop::resizeGL(int width, int height)
 void OrthoTop::draw()
 {
     //Axes
-    glLineWidth(4);
+    glLineWidth(2);
 
     glBegin(GL_LINES);
         glColor3f( 1.0f, 0.0f, 0.0f );
@@ -83,21 +83,17 @@ void OrthoTop::draw()
         glVertex3f(0.0, -4.0, 0.0);
     glEnd();
 
-    //Pojection
-    glLineWidth(2);
-    glColor3f( 1.0f, 1.0f, 1.0f );
-    glBegin(GL_LINES);
-        glVertex2f(1.00, 0.00);
-        glVertex2f(-1.00, 0.00);
-    glEnd();
-    glBegin(GL_LINES);
-        glVertex2f(1.00, 0.00);
-        glVertex2f(0.00, -1.2);
-    glEnd();
-    glBegin(GL_LINES);
-        glVertex2f(-1.00, 0.00);
-        glVertex2f(0.00, -1.2);
-    glEnd();
+    glLineWidth(4);
 
+    //Pojection
+    int i=0;
+    while(i<myModel.Edges.size()){
+        glBegin(GL_LINES);
+        glColor3f( 1.0f, 1.0f, 1.0f );
+        glVertex3f(myModel.Edges[i].p1->x,0.0-myModel.Edges[i].p1->z,myModel.Edges[i].p1->y);
+        glVertex3f(myModel.Edges[i].p2->x,0.0-myModel.Edges[i].p2->z,myModel.Edges[i].p2->y);
+        i++;
+        glEnd();
+    }
 
 }

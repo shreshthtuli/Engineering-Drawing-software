@@ -31,7 +31,8 @@ SOURCES += \
     orthofront.cpp \
     orthotop.cpp \
     orthoside.cpp \
-    model.cpp
+    model.cpp \
+    model_project.cpp
 
 HEADERS += \
         mainwindow.h \

@@ -52,11 +52,14 @@ class Point {
                     y=y1;
                 }
                 ///Gets the tip of a vector perpendicular to the plane formed by p1, p2 and origin by performing cross product
-                static Point get_Perp(Point p1, Point p2){
+                static Point get_Perp(Point *p11, Point *p22, Point *p33){
+                    Point p1=*p11-*p22;
+                    Point p2=*p22-*p33;
                     Point out;
-                    out.x=p1.y*p2.z-p2.y*p1.z;
-                    out.y=p1.z*p2.x-p2.z*p1.x;
-                    out.z=p1.x*p2.y-p2.x*p1.y;
+                    out.x=(p1.y*p2.z)-(p2.y*p1.z);
+                    out.y=(p1.z*p2.x)-(p2.z*p1.x);
+                    out.z=(p1.x*p2.y)-(p2.x*p1.y);
+                    return out;
                 }
                 ///gets the inclination from z axis
                 float get_alpha(){
@@ -96,6 +99,10 @@ class Edge {
                     p1=&P1;
                     p2=&P2;
                 }
+                Edge(Point *P1, Point *P2){
+                    p1=P1;
+                    p2=P2;
+                }
         ///End point
         Point *p1;
         ///End point
@@ -127,7 +134,7 @@ class Plane {
         ///Get an unitnormal to the plane
         /**Obtains normal by taking cross product of two binding edges and returns unit normal*/
         Point get_normal(){
-                Point Nor=Point::get_Perp(*Bounds[0]-*Bounds[1],*Bounds[2]-*Bounds[1]);
+                Point Nor=Point::get_Perp(Bounds[0],Bounds[1],Bounds[2]);
                 Nor.Shrink();
                 return Nor;
         };
@@ -336,11 +343,11 @@ class Model3D {
                 float rot_mat[3][3];
         void get_mat(float theta, float alpha, float beta){
             double ux,uy,uz,ct,st;
-            uz=cos(alpha);
-                        ux=sin(alpha)*cos(beta);
-                        uy=sin(alpha)*sin(beta);
-                        ct=cos(theta);
-                        st=sin(theta);
+            uz=cos(alpha*M_PI/180);
+                        ux=sin(alpha*M_PI/180)*cos(beta*M_PI/180);
+                        uy=sin(alpha*M_PI/180)*sin(beta*M_PI/180);
+                        ct=cos(theta*M_PI/180);
+                        st=sin(theta*M_PI/180);
                         rot_mat[0][0]=ct+ux*ux*(1.0-ct);
                         rot_mat[0][1]=ux*uy*(1.0-ct)-uz*st;
                         rot_mat[0][2]=ux*uz*(1.0-ct)+uy*st;
@@ -459,36 +466,7 @@ class Ortho {
 
         Model3D  eliminate_ghosts(Model3D input) {
 
-        };
-#ifdef MODEL_PROJECT
-#define MODEL_PROJECT
-/*Ortho Model3D::project(/**whether orientation needs to be preserved*/bool pres){
-                    float pi=M_PI;
-                    Model3D temp;
-                    temp.Nodes=Nodes;
-                    temp.Edges=Edges;
-                    temp.Planes=Planes;
-                    temp.ref_x=ref_x;
-                    temp.ref_y=ref_y;
-                    temp.ref_Origin=ref_Origin;
-
-
-                    Ortho out;
-                    out.Front=temp.reduce();
-                    temp.rotate(pi/2.0,pi/2.0,0.0);
-                    out.Top=temp.reduce();
-                    temp.rotate(-pi/2.0,pi/2.0,0.0);
-                    temp.rotate(-pi/2.0,pi/2.0,pi/2.0);          //arbitarily selects right side view. need to change this to select better side view
-                    out.Side=temp.reduce();
-                    out.Side_Is_Left=false;
-                    out.Nodes_complete=true;
-                    return out;
-        };
-*/
-#endif
-
+        }
 };
-
-
 
 #endif // FUNCS_H
