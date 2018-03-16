@@ -36,8 +36,8 @@ void OrthoSide::initializeGL()
     glColorMaterial ( GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE );
     glEnable ( GL_COLOR_MATERIAL );
 
-    static GLfloat lightPosition[4] = { 0, 0, 10, 1.0 };
-    glLightfv(GL_LIGHT0, GL_POSITION, lightPosition);
+    static GLfloat lightPosition[4] = { 1, 1, 1, 1 };
+    glLightfv(GL_LIGHT0, GL_AMBIENT, lightPosition);
 }
 
 void OrthoSide::paintGL()
@@ -86,7 +86,58 @@ void OrthoSide::draw()
     glLineWidth(4);
 
     //Pojection
+    glDepthFunc(GL_LEQUAL);
+    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+    glLineWidth(1.0);
+    Point norm;
+    glColor3f( 0.0f, 0.0f, 0.0f );
     int i=0;
+    while(i<myModel.Planes.size()){
+        glBegin(GL_POLYGON);
+        norm=myModel.Planes[i].get_normal();
+        glNormal3f(norm.x,norm.y,norm.z);
+        for(auto iter1=myModel.Planes[i].Bounds.begin();iter1!=myModel.Planes[i].Bounds.end(); iter1++){
+            auto iter2=*iter1;
+            glVertex3f(iter2->z,iter2->y,0.0-iter2->x);
+        }
+        i++;
+        glEnd();
+    }
+
+    glColorMask(0.0, 0.0, 0.0, 0.0);
+    glColor4d(0.0, 0.0, 1.0, 1.0);
+    i=0;
+    while(i<myModel.Edges.size()){
+        glBegin(GL_LINES);
+        glColor3f( 1.0f, 1.0f, 1.0f );
+        glVertex3f(myModel.Edges[i].p1->z,myModel.Edges[i].p1->y,0.0-myModel.Edges[i].p1->x);
+        glVertex3f(myModel.Edges[i].p2->z,myModel.Edges[i].p2->y,0.0-myModel.Edges[i].p2->x);
+        i++;
+        glEnd();
+    }
+
+    glDepthFunc(GL_GREATER);
+    glColor4d(0.0, 0.0, 1.0, 1.0); // hidden
+    glColorMask(1.0, 1.0, 1.0, 1.0);
+    glLineStipple(4, 0xAAAA); // added
+    glEnable(GL_LINE_STIPPLE); // added
+    glDepthMask(GL_FALSE);
+    i=0;
+    while(i<myModel.Edges.size()){
+        glBegin(GL_LINES);
+        glColor3f( 1.0f, 1.0f, 1.0f );
+        glVertex3f(myModel.Edges[i].p1->z,myModel.Edges[i].p1->y,0.0-myModel.Edges[i].p1->x);
+        glVertex3f(myModel.Edges[i].p2->z,myModel.Edges[i].p2->y,0.0-myModel.Edges[i].p2->x);
+        i++;
+        glEnd();
+    }
+
+    glDepthMask(GL_TRUE);
+    glDisable(GL_LINE_STIPPLE); // added
+    glColor4d(1.0, 1.0, 1.0, 1.0); // solid
+    glLineWidth(3.0);
+    glDepthFunc(GL_LEQUAL);
+    i=0;
     while(i<myModel.Edges.size()){
         glBegin(GL_LINES);
         glColor3f( 1.0f, 1.0f, 1.0f );

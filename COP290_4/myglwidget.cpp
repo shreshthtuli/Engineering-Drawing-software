@@ -20,12 +20,12 @@ MyGLWidget::~MyGLWidget()
 
 QSize MyGLWidget::minimumSizeHint() const
 {
-    return QSize(50, 50);
+    return QSize(200, 50);
 }
 
 QSize MyGLWidget::sizeHint() const
 {
-    return QSize(400, 400);
+    return QSize(800, 400);
 }
 
 static void qNormalizeAngle(int &angle)
@@ -72,6 +72,23 @@ void MyGLWidget::setzoom(int zoomval)
     updateGL();
 }
 
+void MyGLWidget::setWireframe(){
+    wireframe = true;
+    updateGL();
+}
+
+void MyGLWidget::setFill(){
+    wireframe = false;
+    updateGL();
+}
+
+void MyGLWidget::isometric(){
+    xRot = 30;
+    yRot = 320;
+    zRot = 0;
+    updateGL();
+}
+
 void MyGLWidget::initializeGL()
 {
     qglClearColor(Qt::black);
@@ -101,7 +118,7 @@ void MyGLWidget::paintGL()
     if (zoomfactor>0.00) {
         glScalef(zoomfactor, zoomfactor, zoomfactor);
     }
-    draw();
+    draw(wireframe);
 }
 
 void MyGLWidget::resizeGL(int width, int height)
@@ -143,7 +160,8 @@ void MyGLWidget::doUpdate(Model3D mod){
     myModel=mod;
     updateGL();
 }
-void MyGLWidget::draw()
+
+void MyGLWidget::draw(bool wireframe)
 {
     //glClear();
     //Axes
@@ -167,21 +185,87 @@ void MyGLWidget::draw()
         glVertex3f(0.0, 0.0, 4.0);
     glEnd();
 
-    //3D object
-    Point norm;
-    glColor3f( 0.8f, 0.8f, 0.8f );
-    int i=0;
-    while(i<myModel.Planes.size()){
-        glBegin(GL_POLYGON);
-        norm=myModel.Planes[i].get_normal();
-        glNormal3f(norm.x,norm.y,norm.z);
-        for(auto iter1=myModel.Planes[i].Bounds.begin();iter1!=myModel.Planes[i].Bounds.end(); iter1++){
-            auto iter2=*iter1;
-            glVertex3f(iter2->x,iter2->y,iter2->z);
+    if(wireframe==false){
+        //3D object
+        Point norm;
+        glColor3f( 0.8f, 0.8f, 0.8f );
+        int i=0;
+        while(i<myModel.Planes.size()){
+            glBegin(GL_POLYGON);
+            norm=myModel.Planes[i].get_normal();
+            glNormal3f(norm.x,norm.y,norm.z);
+            for(auto iter1=myModel.Planes[i].Bounds.begin();iter1!=myModel.Planes[i].Bounds.end(); iter1++){
+                auto iter2=*iter1;
+                glVertex3f(iter2->x,iter2->y,iter2->z);
+            }
+            i++;
+            glEnd();
         }
-        i++;
-        glEnd();
     }
+
+    else{
+        glDepthFunc(GL_LEQUAL);
+        glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+        glLineWidth(1.0);
+        Point norm;
+        glColor3f( 0.0f, 0.0f, 0.0f );
+        int i=0;
+        while(i<myModel.Planes.size()){
+            glBegin(GL_POLYGON);
+            norm=myModel.Planes[i].get_normal();
+            glNormal3f(norm.x,norm.y,norm.z);
+            for(auto iter1=myModel.Planes[i].Bounds.begin();iter1!=myModel.Planes[i].Bounds.end(); iter1++){
+                auto iter2=*iter1;
+                glVertex3f(iter2->x,iter2->y,iter2->z);
+            }
+            i++;
+            glEnd();
+        }
+
+        glColorMask(0.0, 0.0, 0.0, 0.0);
+        glColor4d(0.0, 0.0, 1.0, 1.0);
+        i=0;
+        while(i<myModel.Edges.size()){
+            glBegin(GL_LINES);
+            glColor3f( 1.0f, 1.0f, 1.0f );
+            glVertex3f(myModel.Edges[i].p1->x,myModel.Edges[i].p1->y,myModel.Edges[i].p1->z);
+            glVertex3f(myModel.Edges[i].p2->x,myModel.Edges[i].p2->y,myModel.Edges[i].p2->z);
+            i++;
+            glEnd();
+        }
+
+        glDepthFunc(GL_GREATER);
+        glColor4d(0.0, 0.0, 1.0, 1.0); // hidden
+        glColorMask(1.0, 1.0, 1.0, 1.0);
+        glLineStipple(4, 0xAAAA); // added
+        glEnable(GL_LINE_STIPPLE); // added
+        glDepthMask(GL_FALSE);
+        i=0;
+        while(i<myModel.Edges.size()){
+            glBegin(GL_LINES);
+            glColor3f( 1.0f, 1.0f, 1.0f );
+            glVertex3f(myModel.Edges[i].p1->x,myModel.Edges[i].p1->y,myModel.Edges[i].p1->z);
+            glVertex3f(myModel.Edges[i].p2->x,myModel.Edges[i].p2->y,myModel.Edges[i].p2->z);
+            i++;
+            glEnd();
+        }
+
+        glDepthMask(GL_TRUE);
+        glDisable(GL_LINE_STIPPLE); // added
+        glColor4d(1.0, 1.0, 1.0, 1.0); // solid
+        glLineWidth(3.0);
+        glDepthFunc(GL_LEQUAL);
+        i=0;
+        while(i<myModel.Edges.size()){
+            glBegin(GL_LINES);
+            glColor3f( 1.0f, 1.0f, 1.0f );
+            glVertex3f(myModel.Edges[i].p1->x,myModel.Edges[i].p1->y,myModel.Edges[i].p1->z);
+            glVertex3f(myModel.Edges[i].p2->x,myModel.Edges[i].p2->y,myModel.Edges[i].p2->z);
+            i++;
+            glEnd();
+        }
+    }
+
 
 
 }

@@ -41,6 +41,18 @@ private slots:
 
     void on_actionOrthographic_projection_triggered();
 
+    void on_actionOrthograhic_projection_triggered();
+
+    void on_action3D_Model_3_triggered();
+
+    void on_actionIsometric_View_triggered();
+
+    void on_actionSolid_View_triggered();
+
+    void on_actionWireframe_View_triggered();
+
+    void on_actionCapture_snapshot_triggered();
+
 private:
     QSlider *createSlider();
     float scalefactor = 1.00;

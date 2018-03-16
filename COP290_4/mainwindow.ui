@@ -240,6 +240,15 @@
                 <height>0</height>
                </size>
               </property>
+              <property name="minimum">
+               <number>-10</number>
+              </property>
+              <property name="maximum">
+               <number>10</number>
+              </property>
+              <property name="pageStep">
+               <number>1</number>
+              </property>
               <property name="orientation">
                <enum>Qt::Horizontal</enum>
               </property>
@@ -289,6 +298,15 @@
                 <height>0</height>
                </size>
               </property>
+              <property name="minimum">
+               <number>-10</number>
+              </property>
+              <property name="maximum">
+               <number>10</number>
+              </property>
+              <property name="pageStep">
+               <number>1</number>
+              </property>
               <property name="orientation">
                <enum>Qt::Horizontal</enum>
               </property>
@@ -337,6 +355,15 @@
                 <width>180</width>
                 <height>0</height>
                </size>
+              </property>
+              <property name="minimum">
+               <number>-10</number>
+              </property>
+              <property name="maximum">
+               <number>10</number>
+              </property>
+              <property name="pageStep">
+               <number>1</number>
               </property>
               <property name="orientation">
                <enum>Qt::Horizontal</enum>
@@ -737,7 +764,14 @@
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_11">
        <item>
-        <widget class="MyGLWidget" name="widget_4" native="true"/>
+        <widget class="MyGLWidget" name="widget_4" native="true">
+         <property name="cursor">
+          <cursorShape>CrossCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="Line" name="line_9">
@@ -1039,14 +1073,6 @@
     <property name="title">
      <string>File</string>
     </property>
-    <widget class="QMenu" name="menuCreate_New">
-     <property name="title">
-      <string>Create New</string>
-     </property>
-     <addaction name="action3D_Model"/>
-     <addaction name="actionOrthographic_projection"/>
-     <addaction name="actionComplete_Model_3"/>
-    </widget>
     <widget class="QMenu" name="menuOpen_File">
      <property name="title">
       <string>Open File</string>
@@ -1065,17 +1091,15 @@
     </widget>
     <addaction name="separator"/>
     <addaction name="separator"/>
-    <addaction name="menuCreate_New"/>
     <addaction name="menuOpen_File"/>
     <addaction name="actionCapture_snapshot"/>
-    <addaction name="actionSave"/>
     <addaction name="menuSave_As"/>
     <addaction name="separator"/>
     <addaction name="actionExit"/>
    </widget>
    <widget class="QMenu" name="menuCovert">
     <property name="title">
-     <string>Covert to</string>
+     <string>Convert to</string>
     </property>
     <addaction name="action3D_to_Orthp"/>
     <addaction name="actionOrthographic_Projections"/>

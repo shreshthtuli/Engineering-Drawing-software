@@ -13,9 +13,9 @@ public:
     ~MyGLWidget();
     void doUpdate(Model3D mod);
     Model3D myModel;
-signals:
-
-public slots:
+    void setFill();
+    void setWireframe();
+    void isometric();
 
 protected:
     void initializeGL();
@@ -41,7 +41,8 @@ signals:
     void zRotationChanged(int angle);
 
 private:
-    void draw();
+    void draw(bool);
+    bool wireframe = false;
     double zoomfactor = 1.00;
     int xRot;
     int yRot;
