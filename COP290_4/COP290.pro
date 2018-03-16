@@ -41,6 +41,7 @@ HEADERS += \
     orthotop.h \
     orthoside.h \
     funcs.h \
-    model.h
+    model.h \
+    reconst.h
 
 FORMS += mainwindow.ui
