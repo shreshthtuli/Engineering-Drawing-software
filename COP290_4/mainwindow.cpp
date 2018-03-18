@@ -10,6 +10,7 @@
 #include <QString>
 #include <QScreen>
 #include <QDesktopWidget>
+#include <QKeyEvent>
 #include<reconst.h>
 #include<algorithm>
 using namespace std;
@@ -114,6 +115,69 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::keyPressEvent(QKeyEvent *event)
+{
+    if(event->key() == Qt::Key_D){
+        ui->widget_4->xCurr = ui->widget_4->xCurr + 1.00;
+    }
+    else if (event->key() == Qt::Key_A) {
+        ui->widget_4->xCurr = ui->widget_4->xCurr - 1.00;
+    }
+    else if (event->key() == Qt::Key_W) {
+        ui->widget_4->yCurr = ui->widget_4->yCurr + 1.00;
+    }
+    else if (event->key() == Qt::Key_S) {
+        ui->widget_4->yCurr = ui->widget_4->yCurr - 1.00;
+    }
+    else if (event->key() == Qt::Key_L) {
+        ui->widget_4->zCurr = ui->widget_4->zCurr + 1.00;
+    }
+    else if (event->key() == Qt::Key_O) {
+        ui->widget_4->zCurr = ui->widget_4->zCurr - 1.00;
+    }
+    else if (event->key() == Qt::Key_Space) {
+
+        Mod.Nodes.push_back(new Point(ui->widget_4->xCurr, ui->widget_4->yCurr, ui->widget_4->zCurr));
+
+        if(initial){
+            xLast = ui->widget_4->xCurr;
+            yLast = ui->widget_4->yCurr;
+            zLast = ui->widget_4->zCurr;
+            initial = false;
+        }
+
+        else{
+            if (xLast != ui->widget_4->xCurr || yLast != ui->widget_4->yCurr || zLast != ui->widget_4->zCurr){
+                Mod.Edges.push_back(Edge(Mod.Nodes[Mod.Nodes.size()-2], Mod.Nodes[Mod.Nodes.size()-1]));
+                initial = true;
+            }
+        }
+
+    }
+    event->accept();
+
+    if(initial){
+        ui->initial->setText("Initial Edge Point");
+    }
+    else{
+        ui->initial->setText("Final Edge Point");
+    }
+
+    ui->xcurr->setNum(ui->widget_4->xCurr);
+    ui->ycurr->setNum(ui->widget_4->yCurr);
+    ui->zcurr->setNum(ui->widget_4->zCurr);
+    ui->widget_4->doUpdate(Mod);
+    ui->frontortho->myModel=Mod;
+    ui->sideortho->myModel=Mod;
+    ui->toportho->myModel=Mod;
+    ui->widget_4->updateGL();
+    ui->frontortho->updateGL();
+    ui->toportho->updateGL();
+    ui->sideortho->updateGL();
+}
+
+
 void MainWindow::on_UpdateModel_clicked()
 {
     ui->widget_4->myModel.translate(ui->XSlider->value(),ui->YSlider->value(),ui->ZSlider->value());
@@ -171,7 +235,7 @@ void MainWindow::on_actionAbout_Qt_triggered()
     QMessageBox::aboutQt(this, "About Qt");
 }
 
-void MainWindow::on_action3D_Model_2_triggered()
+void MainWindow::on_action3D_Model_2_triggered() //Read 3D Model
 {
     filename = QFileDialog::getOpenFileName(this, tr("Open File:"), "C://");
 
@@ -210,6 +274,7 @@ void MainWindow::on_action3D_Model_2_triggered()
         }
         Mod.Planes.push_back(p);
     }
+    ui->widget_4->wireframe = false;
     ui->widget_4->doUpdate(Mod);
     file.close();
 
@@ -258,7 +323,7 @@ void MainWindow::on_actionOrthographic_projection_triggered()
     ui->sideortho->updateGL();
 }
 
-void MainWindow::on_actionOrthograhic_projection_triggered()
+void MainWindow::on_actionOrthograhic_projection_triggered() //Read 2D Model
 {
     vector<pPoint_2d> fr,tp,sd;
 
@@ -396,6 +461,7 @@ void MainWindow::on_actionOrthograhic_projection_triggered()
         Mod.Edges.push_back(Edge(Mod.Nodes[pEdges[i].p1],Mod.Nodes[pEdges[i].p2]));
         i++;
     }
+    ui->widget_4->wireframe = true;
     ui->widget_4->doUpdate(Mod);
     ui->frontortho->myModel=Mod;
     ui->sideortho->myModel=Mod;
@@ -406,7 +472,7 @@ void MainWindow::on_actionOrthograhic_projection_triggered()
     ui->sideortho->updateGL();
 }
 
-void MainWindow::on_action3D_Model_3_triggered()
+void MainWindow::on_action3D_Model_3_triggered() //Save 3D Model
 {
     QFileDialog fileDlg( this );
     fileDlg.setWindowTitle( "Select diectory to save file" );
@@ -427,20 +493,20 @@ void MainWindow::on_action3D_Model_3_triggered()
 
     stream << "NODES" << endl;
 
-    for(int i = 0; i < Mod.Nodes.size(); i++)
-        stream << ui->widget_4->myModel.Nodes[i]->x << " " << Mod.Nodes[i]->y << " " << Mod.Nodes[i]->z << endl;
+    for(int i = 0; i < ui->widget_4->myModel.Nodes.size(); i++)
+        stream << ui->widget_4->myModel.Nodes[i]->x << " " << ui->widget_4->myModel.Nodes[i]->y << " " << ui->widget_4->myModel.Nodes[i]->z << endl;
 
     stream << "EDGES" << endl;
 
-    for(int i = 0; i < Mod.Edges.size(); i++)
-        stream << indexOf(ui->widget_4->myModel.Edges[i].p1, Mod.Nodes) << " " << indexOf(Mod.Edges[i].p2, Mod.Nodes) << endl;
+    for(int i = 0; i < ui->widget_4->myModel.Edges.size(); i++)
+        stream << indexOf(ui->widget_4->myModel.Edges[i].p1, ui->widget_4->myModel.Nodes) << " " << indexOf(ui->widget_4->myModel.Edges[i].p2, ui->widget_4->myModel.Nodes) << endl;
 
     stream << "PLANES" << endl;
 
     for(int i = 0; i < ui->widget_4->myModel.Planes.size(); i++)
     {
         for(int j = 0; j < ui->widget_4->myModel.Planes[i].Bounds.size(); j++){
-            stream << indexOf(ui->widget_4->myModel.Planes[i].Bounds[j], Mod.Nodes);
+            stream << indexOf(ui->widget_4->myModel.Planes[i].Bounds[j], ui->widget_4->myModel.Nodes);
             if(j == ui->widget_4->myModel.Planes[i].Bounds.size() - 1){break;}
             else{stream << " ";}
         }
@@ -472,4 +538,20 @@ void MainWindow::on_actionCapture_snapshot_triggered()
     QFile file(filename);
     file.open(QIODevice::WriteOnly);
     qpix.save(&file, "PNG");
+}
+
+void MainWindow::on_actionCreate_new_wireframe_triggered()
+{
+    Mod.Nodes.clear();
+    Mod.Planes.clear();
+    Mod.Edges.clear();
+    ui->widget_4->xCurr = 0.00;
+    ui->widget_4->yCurr = 0.00;
+    ui->widget_4->zCurr = 0.00;
+    ui->widget_4->create = true;
+    ui->widget_4->wireframe = true;
+    xLast = 0.00;
+    yLast = 0.00;
+    zLast = 0.00;
+    initial = true;
 }

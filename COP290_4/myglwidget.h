@@ -16,6 +16,11 @@ public:
     void setFill();
     void setWireframe();
     void isometric();
+    bool wireframe = false;
+    float xCurr = 0.00;
+    float yCurr = 0.00;
+    float zCurr = 0.00;
+    bool create = false;
 
 protected:
     void initializeGL();
@@ -42,7 +47,6 @@ signals:
 
 private:
     void draw(bool);
-    bool wireframe = false;
     double zoomfactor = 1.00;
     int xRot;
     int yRot;

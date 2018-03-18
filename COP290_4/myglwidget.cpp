@@ -102,9 +102,11 @@ void MyGLWidget::initializeGL()
     glEnable ( GL_COLOR_MATERIAL );
     glPolygonMode(GL_FRONT, GL_FILL);
     glPolygonMode(GL_BACK, GL_FILL);
+    glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
 
     static GLfloat lightPosition[4] = { 0, 0, 10, 1.0 };
     glLightfv(GL_LIGHT0, GL_POSITION, lightPosition);
+
 }
 
 void MyGLWidget::paintGL()
@@ -219,6 +221,15 @@ void MyGLWidget::draw(bool wireframe)
                 glVertex3f(iter2->x,iter2->y,iter2->z);
             }
             i++;
+            glEnd();
+        }
+
+        if(create == true)
+        {
+            glPointSize(4.0);
+            glColor3f(1.0, 1.0, 1.0);
+            glBegin(GL_POINT);
+            glVertex3f(xCurr, yCurr, zCurr);
             glEnd();
         }
 

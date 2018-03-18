@@ -23,6 +23,12 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+    bool initial = true;
+    float xLast = 0.00;
+    float yLast = 0.00;
+    float zLast = 0.00;
+    void keyPressEvent(QKeyEvent * event);
+
 
 private slots:
     void on_UpdateModel_clicked();
@@ -52,6 +58,8 @@ private slots:
     void on_actionWireframe_View_triggered();
 
     void on_actionCapture_snapshot_triggered();
+
+    void on_actionCreate_new_wireframe_triggered();
 
 private:
     QSlider *createSlider();

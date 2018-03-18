@@ -31,7 +31,6 @@ SOURCES += \
     orthofront.cpp \
     orthotop.cpp \
     orthoside.cpp \
-    model.cpp \
     model_project.cpp
 
 HEADERS += \
@@ -41,7 +40,6 @@ HEADERS += \
     orthotop.h \
     orthoside.h \
     funcs.h \
-    model.h \
     reconst.h
 
 FORMS += mainwindow.ui
