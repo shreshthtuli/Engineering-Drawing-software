@@ -17,7 +17,7 @@ The package structure for the software package is as follows:
 Engineering Drawing Software </br>
   |  </br>
   |-> Mathematical Model</br>
-   - |-> Mathematical_Model.pdf</br>
+   &nbsp; |-> Mathematical_Model.pdf</br>
   |-> Class Description and Documentation </br>
    - |-> ED-project-src</br>
    - |-> Doxygen results</br>
