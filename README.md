@@ -8,7 +8,7 @@ This repository holds the mathematical model, documentation, functional descript
  ## Aim
 
 The package is supposed to have the following functionalities:
-   1. We should be able to interactively input or read from a file either i) an isometric drawing and a 3D object model or ii) projections on to any cross section.
+   1. We should be able to interactively input or read from a file either </br> i) an isometric drawing and a 3D object model or </br> ii) projections on to any cross section.
    2. Given the 3D model description we should be able to generate projections on to any cross section or cutting plane.
    3. Given two or more projections we should be able to interactively recover the 3D description and produce an isometric drawing from any view direction. 
    
@@ -37,10 +37,10 @@ Following is the description of the directories:
 1. **Mathematical Model** : Contains the description of all mathematics used for building the software
 2. **Class Description** : Doxygen generated documentation and class structure of the software. Also contains inital source files for documentation.
 3. **Functional Description** : StarUML functional description of all the features and parts of the software.
-4. **3D CAD Software** : Main file containing all the software files including - 
-i) *build* : The executable and dependent files 
-ii) *src* : source (C++, XML) files developed for the software
-iii) *screenshots* : some screens showing the features
+4. **3D CAD Software** : Main file containing all the software files including - </br>
+i) *build* : The executable and dependent files </br>
+ii) *src* : source (C++, XML) files developed for the software</br>
+iii) *screenshots* : some screens showing the features</br>
 iv) *test-files* : some exemplar files (.txt) used for testing
 
 ## Qt and OpenGL
