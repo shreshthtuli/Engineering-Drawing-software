@@ -11,7 +11,7 @@ The package is supposed to have the following functionalities:
    2. Given the 3D model description we should be able to generate projections on to any cross section or cutting plane.
    3. Given two or more projections we should be able to interactively recover the 3D description and produce an isometric drawing from any view direction. 
    
-![Alt text](/Engineering-Drawing-software/3D CAD Software (static)/screenshots/complex(3D).png?raw=true "Optional Title")
+![Alt text](https://drive.google.com/open?id=1oiE5AxBpHcpxeKK_xtD9D_AgKZFcRD2S "Screenshot")
 
 ## Structure
 
