@@ -1,0 +1,15 @@
+INPUT(
+./release/main.o
+./release/mainwindow.o
+./release/myglwidget.o
+./release/orthofront.o
+./release/orthotop.o
+./release/orthoside.o
+./release/model_project.o
+./release/cop290_plugin_import.o
+./release/moc_mainwindow.o
+./release/moc_myglwidget.o
+./release/moc_orthofront.o
+./release/moc_orthotop.o
+./release/moc_orthoside.o
+);
