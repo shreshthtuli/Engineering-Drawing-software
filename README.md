@@ -17,16 +17,16 @@ The package structure for the software package is as follows:
 Engineering Drawing Software </br>
   |  </br>
   |-> Mathematical Model</br>
-   </space> |-> Mathematical_Model.pdf</br>
+    |-> Mathematical_Model.pdf</br>
   |-> Class Description and Documentation </br>
-  <space> |-> ED-project-src</br>
-   <space> |-> Doxygen results</br>
+    |-> ED-project-src</br>
+    |-> Doxygen results</br>
   |-> Functional Description</br>
   |-> 3D CAD Software (static)</br>
- <space> |-> build</br>
-  <space> |-> screenshots</br>
-<space> |-> test-files</br>
- <space> |-> src</br>
+    |-> build</br>
+    |-> screenshots</br>
+    |-> test-files</br>
+    |-> src</br>
     
 Following is the description of the directories:
 1. **Mathematical Model** : Contains the description of all mathematics used for building the software
