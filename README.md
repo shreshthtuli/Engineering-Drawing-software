@@ -1,4 +1,3 @@
-
 # Engineering-Drawing-software
 
 This repository holds the mathematical model, documentation, functional descriptions and source files of an Engineering Drawing and 3D CAD
@@ -21,22 +20,26 @@ The package is supposed to have the following functionalities:
 The package structure for the software package is as follows:  
 Engineering Drawing Software </br>
   |  </br>
-  |-> Mathematical Model</br>
-   &nbsp; |-> Mathematical_Model.pdf</br>
-  |-> Class Description and Documentation </br>
-   &nbsp; |-> ED-project-src</br>
-   &nbsp; |-> Doxygen results</br>
-  |-> Functional Description</br>
-  |-> 3D CAD Software (static)</br>
-   &nbsp; |-> build</br>
-   &nbsp; |-> screenshots</br>
-   &nbsp; |-> test-files</br>
-   &nbsp; |-> src</br>
+  |-> build</br>
+   &nbsp; |-> release
+  |-> doc </br>
+   &nbsp; |-> doc_src</br>
+   &nbsp; |-> doxygen</br>
+   &nbsp; |-> model_mathematics</br>
+   &nbsp; |-> functional_model_UML.mdj</br>
+  |-> screenshots</br>
+  |-> src</br>
+   &nbsp; |-> COP290_6
+   &nbsp; |-> build-COP290-Qt_static-Release 
+  |-> test</br>
     
 Following is the description of the directories:
-1. **Mathematical Model** : Contains the description of all mathematics used for building the software
-2. **Class Description** : Doxygen generated documentation and class structure of the software. Also contains inital source files for documentation.
-3. **Functional Description** : StarUML functional description of all the features and parts of the software.
+1. **build** : The executable and dependent files/binaries </br>
+2. **doc** : Documentation and related files
+i) *doc* : Source files for doxygen
+ii) *doxygen* : Doxygen generated documentation and class structure of the software. Also contains inital source files for documentation.
+iii) *model_mathematics* : Mathematical model description
+iv) *Functional Description* : StarUML functional description of all the features and parts of the software.
 4. **3D CAD Software** : Main file containing all the software files including - </br>
 i) *build* : The executable and dependent files </br>
 ii) *src* : source (C++, XML) files developed for the software</br>
