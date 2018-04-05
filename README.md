@@ -42,8 +42,8 @@ iii) *model_mathematics* : Mathematical model description</br>
 iv) *Functional Description* : StarUML functional description of all the features and parts of the software.</br>
 3. **screenshot** : some screens showing different features</br>
 4. **src** : source (C++, XML) files developed for the software</br>
-i) COP290_6 : Makefiles and other dependencies for build</br>
-ii) build-COP290-Qt_static-Release : Source files</br>
+i) *COP290_6* : Makefiles and other dependencies for build</br>
+ii) *build-COP290-Qt_static-Release* : Source files</br>
 5. **test** : some exemplar files (.txt) used for testing</br>
 
 ## Qt and OpenGL
