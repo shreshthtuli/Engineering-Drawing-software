@@ -21,7 +21,7 @@ The package structure for the software package is as follows:
 Engineering Drawing Software </br>
   |  </br>
   |-> build</br>
-   &nbsp; |-> release
+   &nbsp; |-> release</br>
   |-> doc </br>
    &nbsp; |-> doc_src</br>
    &nbsp; |-> doxygen</br>
@@ -29,22 +29,22 @@ Engineering Drawing Software </br>
    &nbsp; |-> functional_model_UML.mdj</br>
   |-> screenshots</br>
   |-> src</br>
-   &nbsp; |-> COP290_6
-   &nbsp; |-> build-COP290-Qt_static-Release 
+   &nbsp; |-> COP290_6</br>
+   &nbsp; |-> build-COP290-Qt_static-Release </br>
   |-> test</br>
     
 Following is the description of the directories:
 1. **build** : The executable and dependent files/binaries </br>
-2. **doc** : Documentation and related files
-i) *doc* : Source files for doxygen
-ii) *doxygen* : Doxygen generated documentation and class structure of the software. Also contains inital source files for documentation.
-iii) *model_mathematics* : Mathematical model description
-iv) *Functional Description* : StarUML functional description of all the features and parts of the software.
-4. **3D CAD Software** : Main file containing all the software files including - </br>
-i) *build* : The executable and dependent files </br>
-ii) *src* : source (C++, XML) files developed for the software</br>
-iii) *screenshots* : some screens showing the features</br>
-iv) *test-files* : some exemplar files (.txt) used for testing
+2. **doc** : Documentation and related files </br>
+i) *doc* : Source files for doxygen </br>
+ii) *doxygen* : Doxygen generated documentation and class structure of the software. Also contains inital source files for documentation.</br>
+iii) *model_mathematics* : Mathematical model description</br>
+iv) *Functional Description* : StarUML functional description of all the features and parts of the software.</br>
+3. **screenshot** : some screens showing different features</br>
+4. **src** : source (C++, XML) files developed for the software</br>
+i) COP290_6 : Makefiles and other dependencies for build</br>
+ii) build-COP290-Qt_static-Release : Source files</br>
+5. **test** : some exemplar files (.txt) used for testing</br>
 
 ## Qt and OpenGL
 
