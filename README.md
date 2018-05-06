@@ -19,7 +19,7 @@ The package is supposed to have the following functionalities:
 
 The package structure for the software package is as follows:  
 Engineering Drawing Software </br>
-  |  </br>
+:  |  </br>
   |-> build</br>
    &nbsp; |-> release</br>
   |-> doc </br>
@@ -53,11 +53,11 @@ This is not a cross-platform software and is built to run on Windows.
 
 ## Compilation and execution instructions
  
-Go to the src directory inside build folder and run
+Go to the src directory inside build folder and run:
 ```
 make
 ```
-Then change current directory to build and run
+Then change current directory to build and run:
 ```
 ./COP290
 ```
